@@ -1,0 +1,29 @@
+{
+  "sea_level": -63,
+  "disable_mob_generation": false,
+  "aquifers_enabled": false,
+  "ore_veins_enabled": false,
+  "legacy_random_source": false,
+  "default_block": { "Name": "minecraft:stone" },
+  "default_fluid": { "Name": "minecraft:water", "Properties": { "level": "0" } },
+  "spawn_target": [],
+  "noise": { "min_y": -64, "height": 384, "size_horizontal": 1, "size_vertical": 2 },
+  "noise_router": {
+    "barrier": 0.0,
+    "fluid_level_floodedness": 0.0,
+    "fluid_level_spread": 0.0,
+    "lava": 0.0,
+    "temperature": {"type":"minecraft:flat_cache","argument":"dakar_terrain:temperature"},
+    "vegetation": {"type":"minecraft:flat_cache","argument":"dakar_terrain:vegetation"},
+    "continents": {"type":"minecraft:flat_cache","argument":"dakar_terrain:continents"},
+    "erosion": {"type":"minecraft:flat_cache","argument":"dakar_terrain:erosion"},
+    "depth": "dakar_terrain:depth",
+    "ridges": {"type":"minecraft:flat_cache","argument":"dakar_terrain:weirdness"},
+    "initial_density_without_jaggedness": "dakar_terrain:initial_density",
+    "final_density": { "type": "minecraft:interpolated", "argument": "dakar_terrain:terrain_raw" },
+    "vein_toggle": 0.0,
+    "vein_ridged": 0.0,
+    "vein_gap": 0.0
+  },
+  "surface_rule": { "type": "dakar_terrain:vanilla_overworld" }
+}

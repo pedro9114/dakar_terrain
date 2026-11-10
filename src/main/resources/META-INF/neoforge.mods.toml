@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="dakar_terrain"
+version="1.0.0"
+displayName="Dakar Terrain"
+description='''Mundo de terreno muy suave, sin oceanos y con biomas enormes. Ideal para carreras tipo Dakar.'''
+
+[[dependencies.dakar_terrain]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.dakar_terrain]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
